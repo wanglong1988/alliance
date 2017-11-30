@@ -42,7 +42,7 @@ $(function(){
 
     $('#m-list').on('click','#group',function(){
       $ajax('/statistics/saveStatistics',{type:2},function(){
-        window.location.href = 'http://www.baidu.com'
+        window.location.href = '#'
 
         layer.close(layer.open({type: 2}))
       },function(e){
