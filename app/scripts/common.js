@@ -3,7 +3,7 @@ var config = {
     timeout:5000,
     shareLogo:'https://static.sanqimei.com/images/logo/show.jpg',
     shareTitle:'双重福利免费领',
-    shareContent:'3分凭天生，7分靠科美！成为37美星享二级代言奖励，让你变美不花钱！赶紧来变美~',
+    shareContent:'凤凰机器人联合37美放大招！双重福利免费领！',
 
 }
 
