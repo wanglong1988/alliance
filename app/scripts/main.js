@@ -42,7 +42,7 @@ $(function(){
 
     $('#m-list').on('click','#group',function(){
       $ajax('/statistics/saveStatistics',{type:2},function(){
-        window.location.href = `http://www.baidu.com`
+        window.location.href = 'http://www.baidu.com'
 
         layer.close(layer.open({type: 2}))
       },function(e){
@@ -67,7 +67,7 @@ $(function(){
             else{
               layer.close(layer.open({type: 2}));
               layer.open({
-                content: "200份额已被抢完，感谢您的关注"
+                content: '200份额已被抢完，感谢您的关注'
                 ,skin: 'msg'
                 ,time: 2
               });
