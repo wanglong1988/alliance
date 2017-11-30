@@ -2,7 +2,7 @@ var config = {
     host:'http://activity-server.dev.sanqimei.com',
     timeout:5000,
     shareLogo:'http://devstatic.sanqimei.com//images/products/4563453201500456345.jpg',
-    shareTitle:'双重福利免费领123',
+    shareTitle:'双重福利免费领',
     shareContent:'凤凰机器人联合37美放大招！双重福利免费领！',
 
 }
