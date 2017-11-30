@@ -59,19 +59,8 @@ $(function(){
         $ajax('/statistics/saveStatistics',{type:3});
         $ajax('/statistics/getActivityFhNum',{type:3},function(res){
           if(res.status === '1'){
-            if(res.result.num <=200){
               window.location.href = `./sign.html?fromUrl=${url}`
               layer.close(layer.open({type: 2}))
-
-            }
-            else{
-              layer.close(layer.open({type: 2}));
-              layer.open({
-                content: '200份额已被抢完，感谢您的关注'
-                ,skin: 'msg'
-                ,time: 2
-              });
-            }
           }else{
             layer.close(layer.open({type: 2}));
             layer.open({
