@@ -266,7 +266,7 @@ $(function(){
                  return false
              }
          }
-         $ajax('/free/saveFree',{smsCode:code,phone:$('#tel').val(),spuId:215,shareUserId:0,areaId:320104,type:3},function(res){
+         $ajax('/free/saveFree',{smsCode:code,phone:$('#tel').val(),spuId:100,shareUserId:0,areaId:320104,type:3},function(res){
             if(res.status === '1'){
                 console.log(res.result)
                 $('#suc-pic').attr('src',res.result.picUrl)
