@@ -197,8 +197,8 @@ $(function(){
     //     });
     //     return false
     // }
-    loading1 = layer.open({type: 2});
-    init();
+    // loading1 = layer.open({type: 2});
+    // init();
 
     $('#getcode').on('click', function(){
         if(repTel()){
