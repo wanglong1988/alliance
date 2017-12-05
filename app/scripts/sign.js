@@ -266,8 +266,10 @@ $(function(){
                  return false
              }
          }
-         $ajax('/free/saveFree',{smsCode:code,phone:$('#tel').val(),spuId:100,shareUserId:0,areaId:320104,type:3},function(res){
-            if(res.status === '1'){
+        $ajax('/statistics/getActivityFhNum',{type:3},function(res){
+          if(res.status === '1'){
+            $ajax('/free/saveFree',{smsCode:code,phone:$('#tel').val(),spuId:100,shareUserId:0,areaId:320104,type:3},function(res){
+              if(res.status === '1'){
                 console.log(res.result)
                 $('#suc-pic').attr('src',res.result.picUrl)
                 $('#suc-tit').text(res.result.title)
@@ -278,19 +280,36 @@ $(function(){
                 $('.m-popup').removeClass('fadeOutDown fadeInUp').addClass('fadeInUp');
                 document.body.addEventListener('touchmove',handler,false);
                 document.body.addEventListener('wheel',handler,false);
-            }else{
+              }else{
                 layer.open({
-                    content: res.errorMsg
-                    ,skin: 'msg'
-                    ,time: 2
+                  content: res.errorMsg
+                  ,skin: 'msg'
+                  ,time: 2
                 });
-            }
-        },function(e){
-            layer.open({
+              }
+            },function(e){
+              layer.open({
                 content: e.message
                 ,skin: 'msg'
                 ,time: 2
+              });
+            })
+            layer.close(layer.open({type: 2}))
+          }else{
+            layer.close(layer.open({type: 2}));
+            layer.open({
+              content: res.errorMsg
+              ,skin: 'msg'
+              ,time: 2
             });
+          }
+        },function(e){
+          layer.open({
+            content: e.message
+            ,skin: 'msg'
+            ,time: 2
+          });
         })
+
     })
 })
