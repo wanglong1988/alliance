@@ -128,16 +128,17 @@
             box-sizing: border-box;
              flex: 1;
              padding: 0 5px;
-             margin: 12px 0 0 0;
+             margin: 10px 0 10px 0;
              input{
               width: 100%;
               border: 0;
               float: left;
-              height: 16px;
-              line-height: 16px;
+              height: 24px;
+              line-height: 24px;
               background: none;
               font-size: 16px;
               color: rgba(255,255,255,.8);
+
               &::-webkit-input-placeholder{
                  color: rgba(255,255,255,.5);
                  font-size: 16px;
