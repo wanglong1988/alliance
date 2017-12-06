@@ -1,5 +1,5 @@
 var config = {
-    host:'http://activity-server.dev.sanqimei.com',
+    host:'http://activity-server.show.sanqimei.com',
     timeout:5000,
     shareLogo:'http://static.sanqimei.com/web/webapp/icon/show.png',
     shareTitle:'双重福利免费领',
